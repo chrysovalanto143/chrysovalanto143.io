@@ -2,11 +2,12 @@ h1 {
 	color:deeppink;
 		text-align: center;
 }
-body{
-	font-size: 30px;
+body {
+	background-color: beige;
 }
 p {
 	margin: 5%;
+	font-size: 1.8rem;
 }
 .dance .content {
     display: flex;
@@ -14,8 +15,10 @@ p {
     gap: 20px;
 }
 .dance img {
-    width: 650px;
+    width: 50%;
     margin-top: 20px;
+    max-width: 100%;
+    height: auto;
 }
 .second .columns {
     display: flex;
@@ -23,4 +26,59 @@ p {
 }
 .second p {
     width: 50%;
+}
+.third .columns {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+.third img {
+    width: 35%;
+    max-width: 100%;
+    height: auto;
+}
+.third ul {
+    font-size: 1.6rem;
+    margin-left: 20px;
+}
+.third p {
+    font-size: 1.8rem;
+    line-height: 1.6;
+}
+.third .columns {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+.images-right {
+    display: flex;
+    gap: 15px;
+}
+.images-right img {
+    width: 60%;
+    max-width: 100%;
+    height: auto;
+}
+/* Κινητά */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+  .container {
+    padding: 10px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+  body {
+    font-size: 20px;
+  }
 }
